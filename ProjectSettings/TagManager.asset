@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Player
+  - PlayerProjectile
+  - Mushroom
+  - Enemy
+  - EnemyProjectile
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 3538891707
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enviroment
+    uniqueID: 3087045277
+    locked: 0
+  - name: Enemies
+    uniqueID: 108258169
+    locked: 0
+  - name: Ground
+    uniqueID: 2021736621
+    locked: 0
+  - name: Player
+    uniqueID: 2656305325
+    locked: 0
+  - name: Projectiles
+    uniqueID: 2462583481
+    locked: 0
