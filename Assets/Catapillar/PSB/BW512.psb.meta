@@ -1,16 +1,33 @@
 fileFormatVersion: 2
 guid: 42930b6cabd56a744b8b571e178064a3
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: BW512_GO/BW512_GO
-    100002: "BW512_GO/BW512_GO/\u0421\u043B\u043E\u0439 0"
-    400000: BW512_GO/BW512_GO/Transform
-    400002: "BW512_GO/BW512_GO/\u0421\u043B\u043E\u0439 0/Transform"
-    2800000: BW512
-    21200000: "BW512_GO/BW512_GO/\u0421\u043B\u043E\u0439 0/SpriteRenderer"
-    21300000: e25e65b2099f22a4a8ecd195ca585d36
-    100100000: BW512_GO
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: BW512_GO/BW512_GO
+  - first:
+      1: 100002
+    second: "BW512_GO/BW512_GO/\u0421\u043B\u043E\u0439 0"
+  - first:
+      4: 400000
+    second: BW512_GO/BW512_GO/Transform
+  - first:
+      4: 400002
+    second: "BW512_GO/BW512_GO/\u0421\u043B\u043E\u0439 0/Transform"
+  - first:
+      28: 2800000
+    second: BW512
+  - first:
+      212: 21200000
+    second: "BW512_GO/BW512_GO/\u0421\u043B\u043E\u0439 0/SpriteRenderer"
+  - first:
+      213: 21300000
+    second: e25e65b2099f22a4a8ecd195ca585d36
+  - first:
+      1001: 100100000
+    second: BW512_GO
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -68,6 +85,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -81,6 +99,7 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -104,6 +123,7 @@ ScriptedImporter:
       width: 323
       height: 79
     spriteID: e25e65b2099f22a4a8ecd195ca585d36
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -121,6 +141,10 @@ ScriptedImporter:
   importedTextureWidth: 512
   importedTextureHeight: 128
   documentSize: {x: 512, y: 512}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
   textureActualWidth: 512
   textureActualHeight: 128
   spritePackingTag: 
@@ -139,7 +163,9 @@ ScriptedImporter:
     bones: []
     parts: []
     dimension: {x: 0, y: 0}
-  boneGOs: []
+    characterGroups: []
   generateGOHierarchy: 0
   textureAssetName: BW512
   prefabAssetName: BW512_GO
+  spriteLibAssetName: BW512 Sprite Lib
+  secondarySpriteTextures: []

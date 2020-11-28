@@ -1,47 +1,96 @@
 fileFormatVersion: 2
 guid: c8f90aaeb8209f248b37fda3cf3aadba
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO"
-    100002: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO"
+  - first:
+      1: 100002
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       0"
-    100004: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      1: 100004
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       1"
-    100006: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      1: 100006
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       2"
-    100008: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      1: 100008
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       3"
-    100010: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      1: 100010
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       4"
-    400000: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/Transform"
-    400002: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      4: 400000
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/Transform"
+  - first:
+      4: 400002
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       0/Transform"
-    400004: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      4: 400004
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       1/Transform"
-    400006: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      4: 400006
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       2/Transform"
-    400008: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      4: 400008
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       3/Transform"
-    400010: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      4: 400010
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       4/Transform"
-    2800000: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430"
-    21200000: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      28: 2800000
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430"
+  - first:
+      212: 21200000
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       0/SpriteRenderer"
-    21200002: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      212: 21200002
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       1/SpriteRenderer"
-    21200004: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      212: 21200004
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       2/SpriteRenderer"
-    21200006: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      212: 21200006
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       3/SpriteRenderer"
-    21200008: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
+  - first:
+      212: 21200008
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO/\u0421\u043B\u043E\u0439
       4/SpriteRenderer"
-    21300000: 70721e102268c0043a0ae84d1e51a08f
-    21300002: 622b5d9cfcc78fa44b4a1bac09d2eb7c
-    21300004: a1c86d8ea3fb84e40b628bb6a5bc77d8
-    21300006: 065591b7fb5543f4f95b2aa9e87d30cd
-    21300008: 23c68b1331a8d3e43a577ae21dda6323
-    100100000: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO"
+  - first:
+      213: 21300000
+    second: 70721e102268c0043a0ae84d1e51a08f
+  - first:
+      213: 21300002
+    second: 622b5d9cfcc78fa44b4a1bac09d2eb7c
+  - first:
+      213: 21300004
+    second: a1c86d8ea3fb84e40b628bb6a5bc77d8
+  - first:
+      213: 21300006
+    second: 065591b7fb5543f4f95b2aa9e87d30cd
+  - first:
+      213: 21300008
+    second: 23c68b1331a8d3e43a577ae21dda6323
+  - first:
+      1001: 100100000
+    second: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO"
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -99,6 +148,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -112,6 +162,7 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -135,6 +186,7 @@ ScriptedImporter:
       width: 36
       height: 55
     spriteID: 70721e102268c0043a0ae84d1e51a08f
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -156,6 +208,7 @@ ScriptedImporter:
       width: 94
       height: 77
     spriteID: 622b5d9cfcc78fa44b4a1bac09d2eb7c
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -177,6 +230,7 @@ ScriptedImporter:
       width: 96
       height: 74
     spriteID: a1c86d8ea3fb84e40b628bb6a5bc77d8
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -198,6 +252,7 @@ ScriptedImporter:
       width: 91
       height: 71
     spriteID: 065591b7fb5543f4f95b2aa9e87d30cd
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -219,6 +274,7 @@ ScriptedImporter:
       width: 36
       height: 59
     spriteID: 23c68b1331a8d3e43a577ae21dda6323
+    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -236,6 +292,10 @@ ScriptedImporter:
   importedTextureWidth: 256
   importedTextureHeight: 256
   documentSize: {x: 512, y: 512}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
   textureActualWidth: 256
   textureActualHeight: 256
   spritePackingTag: 
@@ -282,7 +342,10 @@ ScriptedImporter:
     bones: []
     parts: []
     dimension: {x: 0, y: 0}
-  boneGOs: []
+    characterGroups: []
   generateGOHierarchy: 0
   textureAssetName: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430"
   prefabAssetName: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430_GO"
+  spriteLibAssetName: "caterpillar_idle512\u043F\u043E\u0440\u0435\u0437\u043A\u0430
+    Sprite Lib"
+  secondarySpriteTextures: []

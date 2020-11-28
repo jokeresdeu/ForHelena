@@ -6,9 +6,15 @@ using Random = UnityEngine.Random;
 
 public class Movement_Controller : MonoBehaviour
 {
+    [SerializeField] private CameraPointController _cameraPoint;
+
     [Header("HorizontalMove")]
     [SerializeField] private Transform _movePoint;
+    [SerializeField] private Transform _locatorPoint;
+    [SerializeField] private Vector2 _locatorArea;
+    [SerializeField] private AnimationClip _crawlAnim;
     [SerializeField] private float _speed;
+    [SerializeField] private bool _crawl;
     private bool _faceRight = true;
     private float _move;
     private bool _canMove;
@@ -85,14 +91,20 @@ public class Movement_Controller : MonoBehaviour
 
         if (_move != 0)
         {
-            if ((_move > 0 && !_faceRight) || (_move < 0 && _faceRight))
+            Debug.Log(_grounded);
+            if(_crawl && _grounded)
+                TryToAction(ActionType.Move);
+            else
             {
-                TryToAction(ActionType.Flip);
+                if ((_move > 0 && !_faceRight) || (_move < 0 && _faceRight))
+                {
+                    TryToAction(ActionType.Flip);
+                }
+                else if (_currentAction != ActionType.Walk)
+                    TryToAction(ActionType.Walk);
             }
-            else if (_currentAction != ActionType.Walk)
-                TryToAction(ActionType.Walk);
-            
-            //TryToAction(ActionType.Move);
+
+            TryToAction(ActionType.Move);
         }
 
         if (_currentAction == ActionType.Walk && _move == 0)
@@ -114,7 +126,7 @@ public class Movement_Controller : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _grounded = Physics2D.OverlapBox(_groundCheck.position, new Vector2(_groundCheckRadius, 0.2f), _whatIsGround);
+        _grounded = Physics2D.OverlapBox(_groundCheck.position, new Vector2(_groundCheckRadius, 0.2f), 0, _whatIsGround);
         if (_pushed && _grounded && Time.time - _pushTime > 1f)
         {
             EndAction();
@@ -130,12 +142,7 @@ public class Movement_Controller : MonoBehaviour
         if (!_canMove)
             return;
 
-        if (_grounded && _playerRB.freezeRotation)
-            _playerRB.freezeRotation = false;
-        else if (!_grounded && !_playerRB.freezeRotation)
-            _playerRB.freezeRotation = true;
-
-        if (_jump && _grounded)
+        if (_jump && _grounded && _currentAction != ActionType.Walk)
         {
             if (_upSideDowm)
                 TryToAction(ActionType.Fall);
@@ -144,11 +151,13 @@ public class Movement_Controller : MonoBehaviour
         }
         _jump = false;
 
-        if (_currentAction == ActionType.Walk && _grounded)
+        if (_currentAction == ActionType.Walk && _grounded && _crawl)
+            EndAction();
+        else if(_currentAction == ActionType.Walk && _grounded && !_crawl)
             _playerRB.velocity = new Vector2(_move * _speed * Time.fixedDeltaTime, _playerRB.velocity.y);
         else if(_currentAction == ActionType.Walk)
         {
-            _playerRB.velocity = new Vector2(_move * _speed * Time.fixedDeltaTime * 0.1f, _playerRB.velocity.y);
+            _playerRB.velocity = new Vector2(_move * _speed * Time.fixedDeltaTime * 0.6f, _playerRB.velocity.y);
         }
             
     }
@@ -197,7 +206,6 @@ public class Movement_Controller : MonoBehaviour
 
     public void TryToAction(ActionType action)
     {
-       
         if (!CanTransition(action))
           return;
 
@@ -220,6 +228,13 @@ public class Movement_Controller : MonoBehaviour
                     TryToAction(ActionType.Flip);
                     return;
                 }
+                if(!CanCrawl())
+                {
+                    TryToAction(ActionType.Refuse);
+                    return;
+                }   
+                _cameraPoint.CrawlMove(_movePoint.position, _crawlAnim.length);
+                _canMove = false;
                 if (!_grounded)
                     return;
                 break;
@@ -273,7 +288,7 @@ public class Movement_Controller : MonoBehaviour
             case ActionType.Jump:
             case ActionType.Flip:
             case ActionType.Refuse:
-                if (_currentAction == ActionType.Move || _currentAction == ActionType.None || _currentAction == ActionType.Bored || _currentAction == ActionType.Walk || _currentAction == ActionType.Jump)
+                if (_currentAction == ActionType.Move || _currentAction == ActionType.None || _currentAction == ActionType.Bored || _currentAction == ActionType.Jump)
                     return true;
                 break;                
             case ActionType.Move:
@@ -300,6 +315,8 @@ public class Movement_Controller : MonoBehaviour
         {
             case ActionType.Move:
                 Move();
+                _canMove = true;
+                _cameraPoint.EndCrawlMove();
                 break;
             case ActionType.Flip:
                 Flip();
@@ -373,6 +390,12 @@ public class Movement_Controller : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    private bool CanCrawl()
+    {
+        return Physics2D.OverlapBox(_locatorPoint.position, _locatorArea, 0) == null;
+    }
+            
+
     private void Move()
     {
         Vector2 newPosition = _movePoint.position;
@@ -436,6 +459,8 @@ public class Movement_Controller : MonoBehaviour
         Gizmos.DrawWireCube(_groundCheck.position, new Vector2(_groundCheckRadius, 0.2f));
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(_cellCheck.position, _cellCheckRadius);
+        Gizmos.color = Color.black;
+        Gizmos.DrawWireCube(_locatorPoint.position, _locatorArea);
     }
 }
 

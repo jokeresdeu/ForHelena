@@ -20,7 +20,7 @@ TagManager:
   - Mushroom
   - Enemy
   - EnemyProjectile
-  - 
+  - Traps
   - 
   - 
   - 
@@ -48,11 +48,17 @@ TagManager:
   - name: Enviroment
     uniqueID: 3087045277
     locked: 0
+  - name: Traps
+    uniqueID: 1860161633
+    locked: 0
   - name: Enemies
     uniqueID: 108258169
     locked: 0
   - name: Ground
     uniqueID: 2021736621
+    locked: 0
+  - name: Interactable
+    uniqueID: 2840540259
     locked: 0
   - name: Player
     uniqueID: 2656305325
